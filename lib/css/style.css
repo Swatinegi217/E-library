@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,800&display=swap');
+:root{
+    --grean:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color: #666;
+    --border:1rem solid rgba(116, 44, 106, 0.8);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0, .1);
+
+      }
+  *{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: all .2s linear;
+    transition: width none;
+     }
+     html {
+        scrollbar-width: thin; /* Firefox */
+      }
+      
+      /* Hide scrollbar for WebKit-based browsers (Chrome, Safari, Opera) */
+      html::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      /* Track */
+      html::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      /* Handle */
+      html::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+      }
+      
+/* CSS for the header section */
+.header {
+  background-color: #1f1e1e;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-1 .logo {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header-1 .logo i {
+  margin-right: 10px;
+}
+
+.header-1 .search-form {
+  position: relative;
+  margin-left: 20px;
+}
+
+.header-1 .search-form input {
+  padding: 5px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+}
+
+.header-1 .search-form label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.header-1 .icons {
+  display: flex;
+  align-items: center;
+}
+
+.header-1 .icons a {
+  font-size: 18px;
+  margin: 0 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-1 .icons button {
+  font-size: 14px;
+}
+
+.header-2 .navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.header-2 .navbar a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  margin: 0 5px;
+  border-bottom: 2px solid transparent;
+  
+}
+
+.header-2 .navbar a:hover {
+  border-bottom: 2px solid #000;
+}
+
+/* CSS for the Section-1 */
+.section-1 {
+  background-color: #007bff;
+  background-image: url('../images/backg.jpeg');
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section-1 h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-1 p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.section-1 .btn {
+  background-color: #fff;
+  color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section-1 .btn i {
+  margin-left: 5px;
+}
+
+/* CSS for the Featured Products section */
+.section-2 {
+  padding: 20px;
+}
+
+.section-2 h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style for each individual card */
+.card {
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author-name {
+  width: 320px;
+}
+
+.card .image {
+  margin-bottom: 20px;
+}
+
+.book-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 630px;
+}
+
+.card .image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.book-title {
+  width: 320px;
+}
+
+.card .des h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+ /* Center align the pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Optional: Add some top margin for spacing */
+}
+
+/* Style for the pagination list */
+.pagination {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each pagination item */
+.page-item {
+  margin: 0 5px; /* Optional: Add some horizontal spacing between pagination items */
+}
+
+/* Style for pagination links */
+.page-link {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+  background-color: #f5f5f5; /* Optional: Change the background color on hover */
+}
+
+/* Style for the active pagination item */
+.page-item.active .page-link {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Style for the previous and next pagination links */
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  background-color: #f5f5f5;
+}
+
+.page-item:first-child .page-link:hover,
+.page-item:last-child .page-link:hover {
+  background-color: #e0e0e0;
+}
+
+/* Optional: Additional styles for disabled pagination links */
+.page-item.disabled .page-link {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+
+/* CSS for the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+.form-container {
+  background-image: url('../images/css-books.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  
+}
